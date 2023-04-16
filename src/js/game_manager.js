@@ -1,8 +1,8 @@
 document.body.style.overflow = 'hidden';
 window.addEventListener('load', startGame);
 
-const amountLines = 4; 
-const amountСolumns = 4; 
+const amountLines = 4;
+const amountСolumns = 4;
 
 let indexGoblin = null;
 
