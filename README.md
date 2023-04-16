@@ -1,0 +1,1 @@
+![CI](https://github.com/xoneru/dz2/actions/workflows/web.yml/badge.svg)
