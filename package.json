@@ -47,6 +47,7 @@
   "dependencies": {
     "core-js": "^3.25.2",
     "css-minimizer-webpack-plugin": "^4.2.0",
+    "push-dir": "^0.4.1",
     "terser-webpack-plugin": "^5.3.6",
     "webpack-merge": "^5.8.0"
   }
