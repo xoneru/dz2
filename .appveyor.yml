@@ -25,3 +25,8 @@ deploy_script: # скрипт развёртывания
   - git config --global user.email xonezzer@gmail.com
   - echo "https://$GITHUB_TOKEN:x-oauth-basic@github.com" > "$HOME/.git-credentials"
   - npx push-dir --dir=dist --branch=gh-pages --force --verbose
+ deploy:
+  release: myproduct-v$(APPVEYOR_BUILD_VERSION)
+  description: 'Release description'
+  provider: GitHub
+  auth_token: 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
