@@ -18,6 +18,19 @@ build_script:
 
 test_script:
   - npm run lint  # скрипт тестирования
+deploy:
+    # выкладываем tagged-коммиты на GitHub Releases:
+    description: '$(APPVEYOR_REPO_TAG_NAME)'
+    provider: GitHub
+
+    auth_token:
+        secure: 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
+
+    artifact: package_name
+    force_update: true
+
+    on:
+        appveyor_repo_tag: true
 
 deploy_script: # скрипт развёртывания
   - git config --global credential.helper store
